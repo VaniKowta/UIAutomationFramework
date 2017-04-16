@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.789">
+  <properties />
+  
+  
+            <testcase name="testIsSliderPresent" time="0.036" classname="com.test.HomePageTest" />
+                <testcase name="testSocialLinks" time="0.161" classname="com.test.HomePageTest" />
+                <testcase name="testCountSliders" time="0.372" classname="com.test.HomePageTest" />
+                <testcase name="testFbPageLink" time="1.220" classname="com.test.HomePageTest" />
+      
+</testsuite>
