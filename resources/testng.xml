@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test">
+   <parameter name="username" value="whitebox@gmail.com"></parameter>
+     <parameter name="password" value="gold123"></parameter>
+  <classes>
+        <class name="com.test.HomePageTest"/>  
+    <!--  <class name="com.test.LoginPageTest"/> -->
+    <!--  <class name="com.test.PpageTest"/>  --> 
+     </classes>
+  </test> 
+</suite>
