@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="password" value="Bikshu25"/>
-  <parameter name="username" value="rangakanchana@gmail.com"/>
-  <test name="Test">
-    <parameter name="password" value="Bikshu25"/>
-    <parameter name="username" value="rangakanchana@gmail.com"/>
-    <classes>
-      <class name="com.test.PpageTest"/>
-    </classes>
-  </test> <!-- Test -->
   <test name="Test(failed)">
-    <parameter name="password" value="Bikshu25"/>
-    <parameter name="username" value="rangakanchana@gmail.com"/>
     <classes>
-      <class name="com.test.PpageTest">
+      <class name="com.wbl.rest.TestTwitterPostApi">
         <methods>
-          <include name="setUp"/>
-          <include name="close"/>
-          <include name="testPresentationPage"/>
-          <include name="beforeClass"/>
+          <include name="testPostAccountSetting" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.test.PpageTest -->
+      </class> <!-- com.wbl.rest.TestTwitterPostApi -->
+      <class name="com.wbl.rest.TestTwitterGetApi">
+        <methods>
+          <include name="testGetAccountSetting"/>
+        </methods>
+      </class> <!-- com.wbl.rest.TestTwitterGetApi -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

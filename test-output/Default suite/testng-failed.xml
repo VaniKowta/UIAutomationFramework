@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
-    <classes>
-      <class name="com.test.HomePageTest"/>
-    </classes>
-  </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.HomePageTest">
+      <class name="com.wbl.rest.TestTwitterGetApi">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="testIsSliderPresent"/>
-          <include name="beforeClass"/>
-          <include name="afterSuite"/>
-          <include name="testSocialLinks"/>
+          <include name="testGetAccountSetting"/>
         </methods>
-      </class> <!-- com.test.HomePageTest -->
+      </class> <!-- com.wbl.rest.TestTwitterGetApi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

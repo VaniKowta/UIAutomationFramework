@@ -1,79 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1983" started-at="2016-09-22T18:04:09Z" finished-at="2016-09-22T18:04:11Z">
+  <suite name="Default suite" duration-ms="357" started-at="2017-05-02T07:24:04Z" finished-at="2017-05-02T07:24:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1983" started-at="2016-09-22T18:04:09Z" finished-at="2016-09-22T18:04:11Z">
-      <class name="com.test.PpageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.PpageTest@79b4d0f]" name="setUp" is-config="true" duration-ms="8760" started-at="2016-09-22T11:04:00Z" finished-at="2016-09-22T11:04:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.PpageTest@79b4d0f]" name="beforeClass" is-config="true" duration-ms="4" started-at="2016-09-22T11:04:09Z" finished-at="2016-09-22T11:04:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testLoginPage(java.lang.String, java.lang.String)[pri:0, instance:com.test.PpageTest@79b4d0f]" name="testLoginPage" duration-ms="1959" started-at="2016-09-22T11:04:09Z" finished-at="2016-09-22T11:04:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rangakanchana@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bikshu25]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginPage -->
-        <test-method status="SKIP" signature="testPresentationPage(java.lang.String, java.lang.String)[pri:0, instance:com.test.PpageTest@79b4d0f]" name="testPresentationPage" duration-ms="0" started-at="2016-09-22T11:04:11Z" finished-at="2016-09-22T11:04:11Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method testPresentationPage requires 2 parameters but 0 were supplied in the @Test annotation.]]>
-            </message>
+    <test name="Default test" duration-ms="357" started-at="2017-05-02T07:24:04Z" finished-at="2017-05-02T07:24:05Z">
+      <class name="com.wbl.rest.TestTwitterGetApi">
+        <test-method status="FAIL" signature="testGetAccountSetting()[pri:0, instance:com.wbl.rest.TestTwitterGetApi@6d8a00e3]" name="testGetAccountSetting" duration-ms="341" started-at="2017-05-02T02:24:04Z" finished-at="2017-05-02T02:24:05Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method testPresentationPage requires 2 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+              <![CDATA[java.lang.NullPointerException
+	at com.wbl.rest.TestTwitterGetApi.testGetAccountSetting(TestTwitterGetApi.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPresentationPage -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.test.PpageTest@79b4d0f]" name="close" is-config="true" duration-ms="1120" started-at="2016-09-22T11:04:11Z" finished-at="2016-09-22T11:04:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.test.PpageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testGetAccountSetting -->
+      </class> <!-- com.wbl.rest.TestTwitterGetApi -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
